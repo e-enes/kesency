@@ -13,7 +13,7 @@ This will install the required dependencies and start the development server. Yo
 ## Project Structure
 The project is organized into several directories:
 
-* `src`: Contains the source code of the front-end application, including React components, Redux reducers, and CSS styles.
+* `src`: Contains the source code of the front-end application, including React components and CSS styles.
 * `public`: Contains the public assets of the application, such as the HTML file and the favicon.
 * `node_modules`: Contains the dependencies installed by npm.
 
