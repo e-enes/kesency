@@ -1,4 +1,9 @@
 # KESENCY Website Front
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+![GitHub stars](https://img.shields.io/github/stars/enes-th/digital-agency-website?label=Stars)
+![GitHub last commit](https://img.shields.io/github/last-commit/enes-th/digital-agency-website?label=Last%20Update)
+![GitHub open issues](https://img.shields.io/github/issues/enes-th/digital-agency-website?label=Issues)
+
 This is the front-end repository for the Kesency website, a digital agency that provides services related to web design, development, and marketing. The website is built using modern web development technologies such as React and CSS modules.
 
 ## Getting Started
