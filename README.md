@@ -4,7 +4,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/enes-th/digital-agency-website?label=Last%20Update)
 ![GitHub open issues](https://img.shields.io/github/issues/enes-th/digital-agency-website?label=Issues)
 
-This is the front-end repository for the Kesency website, a digital agency that provides services related to web design, development, and marketing. The website is built using modern web development technologies such as React and CSS modules.
+This is the front-end repository for the Kesency website (old), a digital agency that provides services related to web design, development, and marketing. The website is built using modern web development technologies such as React and CSS modules.
 
 ## Getting Started
 To get started with the project, clone the repository to your local machine and run the following commands:
@@ -13,7 +13,7 @@ To get started with the project, clone the repository to your local machine and 
 npm install
 npm start
 ```
-This will install the required dependencies and start the development server. You can then access the website at `'http://localhost:3000'`.
+This will install the required dependencies and start the development server. You can then access the website at `http://localhost:3000`.
 
 ## Project Structure
 The project is organized into several directories:
