@@ -42,10 +42,8 @@ export async function contact(fname: string, email: string, phone: string, websi
         message: !message
     };
 
-    const errorFields: FieldName[] = [];
     for (const [key, value] of Object.entries(errors)) {
         if (value) {
-            errorFields.push(key as FieldName);
             const message = ERROR_MESSAGES[key as FieldName];
             throw new CustomError(message, false, [key as FieldName]);
         }
