@@ -1,4 +1,4 @@
-@import url("./assets/fonts/font.css");
-@import url("./assets/css/spacing.css");
-@import url("./assets/css/style.css");
-@import url("aos/dist/aos.css");
+@import "font.css";
+@import "spacing.css";
+@import "style.css";
+@import "../../Old/node_modules/aos/dist/aos.css";

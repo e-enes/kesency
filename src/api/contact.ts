@@ -31,7 +31,7 @@ interface ContactResponse {
     field: string[];
     message: string;
     code: boolean;
-};
+}
 
 export async function contact(fname: string, email: string, phone: string, website: string, message: string): Promise<ContactResponse> {
     const errors = {
@@ -88,4 +88,4 @@ export async function contact(fname: string, email: string, phone: string, websi
 
         throw new CustomError("Error sending message! " + error, true, fields);
     }
-};
+}

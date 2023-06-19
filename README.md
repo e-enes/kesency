@@ -1,4 +1,6 @@
-# KESENCY Website Front
+*This project is no longer maintained*
+
+# KESENCY Website Front (Old)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![GitHub stars](https://img.shields.io/github/stars/enes-th/digital-agency-website?label=Stars)
 ![GitHub last commit](https://img.shields.io/github/last-commit/enes-th/digital-agency-website?label=Last%20Update)

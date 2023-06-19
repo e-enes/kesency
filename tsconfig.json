@@ -1,17 +1,17 @@
 {
-    "compilerOptions": {
-        "esModuleInterop": true,
-        "jsx": "react",
-        "target": "ES6",
-        "module": "commonjs",
-        "strict": true,
-        "outDir": "dist",
-        "forceConsistentCasingInFileNames": true
-    },
-    "include": [
-        "src/**/*"
-    ],
-    "exclude": [
-        "node_modules"
-    ]
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "ES2017",
+    "module": "commonjs",
+    "strict": true,
+    "outDir": "dist",
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

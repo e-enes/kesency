@@ -1,11 +1,13 @@
 /**
- * Intellectual property of KESENCY. 
+ * Intellectual property of KESENCY.
+ * This project is no longer maintained.
  * 
  * 
  * @author KESENCY LLC
  * @link https://kesency.com/
  * @version 1.0.1
  * @license MIT
+ * @deprecated true
  * 
  */
 

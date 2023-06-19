@@ -23,6 +23,8 @@ export default class Header extends Component {
     componentWillUnmount = () => {
         window.removeEventListener("scroll", this.handleScroll);
         document.removeEventListener("click", this.handleClick);
+
+        window.alert("You are browsing the old KESENCY website which is no longer maintained and is online for testing purposes.");
     }
 
     handleScroll = () => {
@@ -193,7 +195,7 @@ export default class Header extends Component {
                 <nav className="navbar navbar-expand-lg">
                     <div className="container">
                         <Link className="navbar-brand" to="/">
-                            <img src="https://cdn.kesency.com/images/brand-logo.svg" alt="Brand Logo" className="img-fluid" width="207" height="87" />
+                            <img src="https://cdn.kesency.com/images/brand-logo.svg" alt="Brand Logo" className="img-fluid" width="207" height="87" /> (OLD)
                         </Link>
                         <button className="navbar-toggler" type="button" onClick={this.handleCustomTogglerIcon} data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                             aria-label="Toggle navigation">
