@@ -1,0 +1,173 @@
+/* NORMALIZE ---
+------------------ */
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Hind Vadodara", sans-serif;
+    font-size: 10px;
+}
+
+body {
+    font-family: "Hind Vadodara", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: clip;
+    font-size: 1.8rem;
+}
+
+img, picture, canvas, video, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    font-family: "Fira Sans", sans-serif;
+    line-height: 1.4;
+    color: #172b43;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 4.8rem;
+    font-weight: 900;
+    margin-bottom: 2.1rem;
+}
+
+h3 {
+    font-size: 3.6rem;
+    font-weight: 900;
+}
+
+h4 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+p {
+    font-family: "Hind Vadodara", sans-serif;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 300;
+    margin-bottom: 1.9rem;
+}
+
+a, button, img, a:focus, button:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    position: relative;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+.container {
+    max-width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.row > [class*=col] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media only screen and (min-width: 992px) {
+    .text-lg-left {
+        text-align: left !important;
+    }
+
+    .text-lg-right {
+        text-align: right !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .text-md-left {
+        text-align: left !important;
+    }
+
+    .text-md-right {
+        text-align: right !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body,
+    p {
+        font-size: 1.6rem;
+    }
+
+    br {
+        display: none;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 1.3rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+
+    h5 {
+        font-size: 1.8rem;
+    }
+
+    h6 {
+        font-size: 1.6rem;
+    }
+
+    input,
+    textarea {
+        padding: .5rem 1.5rem;
+    }
+}
+
+/* END NORMALIZE ---
+---------------------- */

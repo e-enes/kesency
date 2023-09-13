@@ -1,51 +1,56 @@
 {
-    "name": "kesency-old",
-    "version": "1.0.1",
-    "private": false,
-    "description": "This project is no longer maintained.",
-    "dependencies": {
-        "@testing-library/jest-dom": "^5.16.5",
-        "@testing-library/react": "^13.3.0",
-        "@testing-library/user-event": "^13.5.0",
-        "aos": "^2.3.4",
-        "isotope-layout": "^3.0.6",
-        "jquery": "^3.6.0",
-        "react": "^18.2.0",
-        "react-cookie": "^4.1.1",
-        "react-dom": "^18.2.0",
-        "react-router-dom": "^6.3.0",
-        "react-scripts": "5.0.1",
-        "react-slick": "^0.29.0",
-        "web-vitals": "^2.1.4"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject"
-    },
-    "eslintConfig": {
-        "extends": [
-            "react-app",
-            "react-app/jest"
-        ]
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    },
-    "devDependencies": {
-        "@types/aos": "^3.0.4",
-        "@types/isotope-layout": "^3.0.9",
-        "@types/jquery": "^3.5.16",
-        "@types/react-slick": "^0.23.10"
-    }
+  "name": "digital-agency-website",
+  "version": "1.2.0",
+  "description": "Official KESENCY Website (front-end part)",
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "bootstrap": "^5.3.1",
+    "next": "^13.4.19",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^3.1.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.7",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@types/react-google-recaptcha": "^2.1.5",
+    "@types/react-slick": "^0.23.10",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "eslint": "^8.48.0",
+    "eslint-config-next": "^13.4.19",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "info": "next info"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "not dead",
+    "not ie <= 11",
+    "not Safari > 0"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enes-th/digital-agency-website.git"
+  },
+  "author": "KESENCY",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enes-th/digital-agency-website/issues"
+  },
+  "homepage": "https://github.com/enes-th/digital-agency-website#readme",
+  "private": true
 }
