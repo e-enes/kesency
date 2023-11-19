@@ -244,13 +244,13 @@
 .btn-big {
     font-size: 1.6rem;
     line-height: 30px;
-    padding: 1.6rem 3rem;
+    padding: 1.3rem 3rem;
 }
 
 .btn-mid {
     font-size: 1.4rem;
     line-height: 30px;
-    padding: 1rem 3rem;
+    padding: .7rem 3rem;
 }
 
 .btn-small {
@@ -1175,6 +1175,11 @@
 
 .tab-content h4 {
     margin-bottom: 1.7rem;
+}
+
+.service-description{
+    color: #485768;
+    font-size: 18px;
 }
 
 /* Responsive */

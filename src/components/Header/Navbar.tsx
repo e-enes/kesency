@@ -116,7 +116,7 @@ const Navbar = () => {
 
   return (
     <React.Fragment>
-      <Bar expand="lg" className={`${scrolled ? "scrolled" : ""}`}>
+      <Bar expand="lg" className={`${scrolled ? "scrolled" : ""}`} style={{zIndex:101}}>
         <Container>
           <Bar.Brand href="/">
             <Image
