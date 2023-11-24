@@ -75,7 +75,7 @@ const ServicesSection = () => {
                     <i className={`${icon} ${style.icon}`}></i>
                   </span>
                   <h5 className="text-center">{title}</h5>
-                  <p className="color-p-desc">{description}</p>
+                  <p className="service-description">{description}</p>
                 </Link>
               </Col>
             );
