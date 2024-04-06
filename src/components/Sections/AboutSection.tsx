@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-
 import { BackgroundShape } from "@components/BackgroundShape";
 import { Container, Row, Col } from "react-bootstrap";
 

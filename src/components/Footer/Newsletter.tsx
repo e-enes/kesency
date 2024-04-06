@@ -1,5 +1,4 @@
-import React, { ChangeEvent, FormEvent, useRef, useState } from "react";
-
+import { ChangeEvent, FormEvent, useRef, useState } from "react";
 import { Container, Form, Row, Col } from "react-bootstrap";
 
 const Newsletter = () => {
@@ -23,7 +22,7 @@ const Newsletter = () => {
     const formArray = Array.from(formRef.current!.children[0].children).slice(0, -1);
     console.log(formArray);
 
-    formArray.forEach(el => {
+    formArray.forEach((el) => {
       const input = el.children[0] as HTMLInputElement;
 
       input.classList.add("success-input", "readonly");

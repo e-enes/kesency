@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-
 import { styles } from "@utils/styles";
 import { GetQuoteButton } from "@components/Buttons/GetQuoteButton";
 import { Container, Row, Col } from "react-bootstrap";

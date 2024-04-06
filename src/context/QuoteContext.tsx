@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 interface IQuoteContext {
   showModal: boolean;
@@ -21,11 +21,7 @@ export const QuoteProvider = ({ children }: { children: React.ReactNode }) => {
     setShowModal(false);
   };
 
-  return (
-    <QuoteContext.Provider value={{ showModal, openQuoteModal, closeQuoteModal }}>
-      {children}
-    </QuoteContext.Provider>
-  );
+  return <QuoteContext.Provider value={{ showModal, openQuoteModal, closeQuoteModal }}>{children}</QuoteContext.Provider>;
 };
 
 export const useQuote = (): IQuoteContext => {

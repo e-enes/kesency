@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FormEvent, useRef, useState } from "react";
+import { ChangeEvent, FormEvent, useRef, useState } from "react";
 import ReCaptcha from "react-google-recaptcha";
 
 import { SocialIcons } from "@components/SocialIcons";
@@ -33,7 +33,7 @@ const ContactModal = () => {
     reCaptchaRef.current!.execute();
 
     const formArray = Array.from(formRef.current!.children[0].children).slice(0, -2);
-    formArray.forEach(el => {
+    formArray.forEach((el) => {
       const input = el.children[0] as HTMLInputElement;
 
       if (input.value) {
@@ -132,11 +132,7 @@ const ContactModal = () => {
                         <p id="status-contact" className={sent ? "success-message" : ""}>
                           {status}
                         </p>
-                        <button
-                          type="submit"
-                          id="submit"
-                          className="custom-btn btn-big grad-style-ef"
-                        >
+                        <button type="submit" id="submit" className="custom-btn btn-big grad-style-ef">
                           CONTACT US NOW
                         </button>
                       </div>
@@ -155,8 +151,7 @@ const ContactModal = () => {
                     An email and phone call from one of our representatives.
                   </p>
                   <p>
-                    <i className="ml-symone-68-arrow-left-right-up-down-increase-decrease"></i>A
-                    time &amp; cost estimation.
+                    <i className="ml-symone-68-arrow-left-right-up-down-increase-decrease"></i>A time &amp; cost estimation.
                   </p>
                   <p>
                     <i className="ml-symone-68-arrow-left-right-up-down-increase-decrease"></i>

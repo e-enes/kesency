@@ -1,4 +1,4 @@
-import React, { LegacyRef } from "react";
+import { LegacyRef } from "react";
 import ReCaptcha from "react-google-recaptcha";
 
 import { CAPTCHA_SITE_KEY } from "@utils/constant";

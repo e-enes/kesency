@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 
 import { InnerMain } from "@components/InnerMain";
 import { TERMS_CONDITIONS_UPDATE } from "@utils/constant";

@@ -39,9 +39,9 @@ const DesignPage = () => {
       <DescriptionService image={CDN + "/images/services/web-design.svg"}>
         <h2>Responsive Web Design</h2>
         <p>
-          A website and online presence strategy help you to market your business online. A website
-          is important because it helps build credibility as a business. Another important thing is
-          that you have the capacity to represent your customers, why should they rely on you.
+          A website and online presence strategy help you to market your business online. A website is important because it helps build
+          credibility as a business. Another important thing is that you have the capacity to represent your customers, why should they rely
+          on you.
         </p>
       </DescriptionService>
       <ProcessService process={process} />

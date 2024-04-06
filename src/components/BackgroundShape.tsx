@@ -1,5 +1,3 @@
-import React from "react";
-
 const svg = {
   width: "779px",
   height: "759px",

@@ -38,7 +38,7 @@ const SEOPage = () => {
     {
       title: "Reporting",
       description:
-        '"The reporting stage is where we measure and report on the effectiveness of the SEO strategy. We use analytics tools to monitor website traffic, keyword rankings, and other key performance indicators (KPIs) to track progress and identify areas for improvement. We provide regular reports to the client that include insights and recommendations for ongoing optimization.',
+        "The reporting stage is where we measure and report on the effectiveness of the SEO strategy. We use analytics tools to monitor website traffic, keyword rankings, and other key performance indicators (KPIs) to track progress and identify areas for improvement. We provide regular reports to the client that include insights and recommendations for ongoing optimization.",
       image: CDN + "/images/services/process-tab/seo-process/seo-process-img-5.svg",
       icon: "ml-baftwo-37-discount-legal-paper-bill-invoice-percentage",
     },
@@ -49,18 +49,17 @@ const SEOPage = () => {
       <InnerMain style={"body-style-1"}>
         <h1>Search Engine Optimization</h1>
         <p>
-          Search Engine Optimization (SEO) is the practice of optimizing a website or online content
-          to improve its ranking and visibility in search engine results app.
+          Search Engine Optimization (SEO) is the practice of optimizing a website or online content to improve its ranking and visibility
+          in search engine results app.
         </p>
       </InnerMain>
       <DescriptionService image={CDN + "/images/services/seo.svg"}>
         <h2>Stand Out in the Crowd!</h2>
         <p>
-          Standing out in the crowd with SEO involves more than just implementing a few optimization
-          techniques. It requires a comprehensive and strategic approach that includes ongoing
-          monitoring and adjustments to stay ahead of the competition. By partnering with an
-          experienced SEO agency, you can create a customized SEO strategy that aligns with your
-          business goals and helps you stand out in the crowded online marketplace.
+          Standing out in the crowd with SEO involves more than just implementing a few optimization techniques. It requires a comprehensive
+          and strategic approach that includes ongoing monitoring and adjustments to stay ahead of the competition. By partnering with an
+          experienced SEO agency, you can create a customized SEO strategy that aligns with your business goals and helps you stand out in
+          the crowded online marketplace.
         </p>
       </DescriptionService>
       <ProcessService process={process} />

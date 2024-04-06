@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": [
-      "DOM",
-      "DOM.Iterable",
-      "ESNext"
-    ],
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -24,31 +20,13 @@
       }
     ],
     "paths": {
-      "@components/*": [
-        "./src/components/*"
-      ],
-      "@api/*": [
-        "./src/api/*"
-      ],
-      "@styles/*": [
-        "./src/styles/*"
-      ],
-      "@utils/*": [
-        "./src/utils/*"
-      ],
-      "@context/*": [
-        "./src/context/*"
-      ]
+      "@components/*": ["./src/components/*"],
+      "@api/*": ["./src/api/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@context/*": ["./src/context/*"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    "dist/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "dist/types/**/*.ts"],
+  "exclude": ["node_modules", "dist", "build", "out"]
 }

@@ -21,12 +21,7 @@ const FeaturesSection = ({ title, slice, item }: IFeaturesSection) => {
   const [selectedFeature, setSelectedFeature] = useState({ image: "", title: "", description: "" });
 
   const handleClose = () => setShow(false);
-  const handleShow = (
-    e: MouseEvent<HTMLAnchorElement | MouseEvent>,
-    image: string,
-    title: string,
-    description: string
-  ) => {
+  const handleShow = (e: MouseEvent<HTMLAnchorElement | MouseEvent>, image: string, title: string, description: string) => {
     e.preventDefault();
     setSelectedFeature({ image, title, description });
     setShow(true);
@@ -85,8 +80,7 @@ const FeaturesSection = ({ title, slice, item }: IFeaturesSection) => {
     features.map((feature, index) => {
       index++;
       feature.title = "Oops! Under maintenance.";
-      feature.description =
-        "This part of the site is under maintenance for technical reasons. Try again later!";
+      feature.description = "This part of the site is under maintenance for technical reasons. Try again later!";
       feature.image = CDN + `/images/featured-projects/featured/project-featured-${index}.svg`;
       return feature;
     });
@@ -98,36 +92,19 @@ const FeaturesSection = ({ title, slice, item }: IFeaturesSection) => {
         <BackgroundShape direction={"left"} className={"shape-home-banner"} />
         <Container>
           <h2 className={!item ? "text-center" : ""}>{title}</h2>
-          {!item ? (
-            <p className="section-subheading text-center">
-              Sometimes we show what we do, and (maybe) how
-            </p>
-          ) : (
-            ""
-          )}
+          {!item ? <p className="section-subheading text-center">Sometimes we show what we do, and (maybe) how</p> : ""}
           <div className="featured-project-showcase text-center">
             <Row>
               {features.map(({ image, title, subTitle, description }, index) => {
                 return (
-                  <Col
-                    md={6}
-                    lg={4}
-                    className={`grid-item ${item ? "featured-item" : ""}`}
-                    key={index}
-                  >
+                  <Col md={6} lg={4} className={`grid-item ${item ? "featured-item" : ""}`} key={index}>
                     <Link
                       href={`#featured-${index}`}
                       className="featured-content-block content-block"
-                      onClick={e => handleShow(e, image, title, description)}
+                      onClick={(e) => handleShow(e, image, title, description)}
                     >
                       <div className="img-container">
-                        <Image
-                          src={image}
-                          alt={`featured-${index}`}
-                          className="img-fluid"
-                          height="0"
-                          width="0"
-                        />
+                        <Image src={image} alt={`featured-${index}`} className="img-fluid" height="0" width="0" />
                       </div>
                       <h5>
                         <span className="content-block__sub-title">{subTitle}</span>
@@ -137,11 +114,7 @@ const FeaturesSection = ({ title, slice, item }: IFeaturesSection) => {
                   </Col>
                 );
               })}
-              {!item && !isNaN(slice) ? (
-                <NavButton to={"/portfolio"} label={"DISCOVER MORE WORKS"} />
-              ) : (
-                " "
-              )}
+              {!item && !isNaN(slice) ? <NavButton to={"/portfolio"} label={"DISCOVER MORE WORKS"} /> : " "}
             </Row>
           </div>
         </Container>

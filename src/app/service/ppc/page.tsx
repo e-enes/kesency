@@ -49,16 +49,15 @@ const PPCPage = () => {
       <InnerMain style={"body-style-1"}>
         <h1>Pay-Per-Click</h1>
         <p>
-          PPC (Pay-Per-Click) advertising is a digital marketing strategy in which advertisers pay a
-          fee each time one of their ads is clicked.
+          PPC (Pay-Per-Click) advertising is a digital marketing strategy in which advertisers pay a fee each time one of their ads is
+          clicked.
         </p>
       </InnerMain>
       <DescriptionService image={CDN + "/images/services/pay-per-click.svg"}>
         <h2>Quickest Way to Increase</h2>
         <p>
-          PPC ads can appear in various formats such as search engine results app, social media
-          platforms, and websites. Advertisers bid on specific keywords relevant to their business
-          and target audience, and the ads are displayed to users who are searching for those
+          PPC ads can appear in various formats such as search engine results app, social media platforms, and websites. Advertisers bid on
+          specific keywords relevant to their business and target audience, and the ads are displayed to users who are searching for those
           keywords or are within the targeted demographic.
         </p>
       </DescriptionService>

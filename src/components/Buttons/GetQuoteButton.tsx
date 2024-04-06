@@ -1,7 +1,7 @@
-import React, { CSSProperties } from "react";
+import { CSSProperties } from "react";
+import { Nav } from "react-bootstrap";
 
 import { useQuote } from "@context/QuoteContext";
-import { Nav } from "react-bootstrap";
 
 interface IGetQuoteButtonProps {
   to: string;
@@ -13,12 +13,7 @@ const GetQuoteButton = ({ to, style }: IGetQuoteButtonProps) => {
 
   return (
     <Nav.Item>
-      <Nav.Link
-        className="custom-btn btn-mid grad-style-cd"
-        href={to}
-        onClick={openQuoteModal}
-        style={style}
-      >
+      <Nav.Link className="custom-btn btn-mid grad-style-cd" href={to} onClick={openQuoteModal} style={style}>
         GET A QUOTE
       </Nav.Link>
     </Nav.Item>

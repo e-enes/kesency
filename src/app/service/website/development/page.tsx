@@ -39,11 +39,9 @@ const DevelopmentPage = () => {
       <DescriptionService image={CDN + "/images/services/web-design.svg"}>
         <h2>Full-Stack Web Development</h2>
         <p>
-          In full-stack web development, the front-end layer deals with the user interface and user
-          experience of the application, while the back-end layer handles the server-side logic,
-          database management, and API development. A full-stack developer should be capable of
-          understanding and working with all layers of the stack, as well as deploying and
-          maintaining web applications in production.
+          In full-stack web development, the front-end layer deals with the user interface and user experience of the application, while the
+          back-end layer handles the server-side logic, database management, and API development. A full-stack developer should be capable
+          of of understanding and working with all layers of the stack, as well as deploying and maintaining web applications in production.
         </p>
       </DescriptionService>
       <ProcessService process={process} />

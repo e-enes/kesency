@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 
 import { NavButton } from "@components/Buttons/NavButton";
@@ -14,15 +13,7 @@ interface IFeatureModal {
   removeBtn: boolean;
 }
 
-const FeatureModal = ({
-  show,
-  handleClose,
-  image,
-  alt,
-  title,
-  description,
-  removeBtn,
-}: IFeatureModal) => {
+const FeatureModal = ({ show, handleClose, image, alt, title, description, removeBtn }: IFeatureModal) => {
   return (
     <Modal show={show} onHide={handleClose}>
       <Modal.Header closeButton></Modal.Header>

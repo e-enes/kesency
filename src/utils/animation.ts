@@ -1,5 +1,5 @@
 export const fadeToggle = (element: HTMLElement, duration: number = 400): Promise<void> => {
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     const display = window.getComputedStyle(element).display;
     const isDisplay = display === "block";
     if (element.offsetHeight > 0 || element.offsetWidth > 0 || isDisplay) {
@@ -11,7 +11,7 @@ export const fadeToggle = (element: HTMLElement, duration: number = 400): Promis
 };
 
 export const fadeIn = (element: HTMLElement, duration: number = 400): Promise<void> => {
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     element.style.opacity = "0";
     element.style.display = "block";
     element.style.transition = `opacity ${duration}ms`;
@@ -26,7 +26,7 @@ export const fadeIn = (element: HTMLElement, duration: number = 400): Promise<vo
 };
 
 export const fadeOut = (element: HTMLElement, duration: number = 400): Promise<void> => {
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     element.style.opacity = "1";
     element.style.transition = `opacity ${duration}ms`;
     setTimeout(() => {
@@ -42,7 +42,7 @@ export const fadeOut = (element: HTMLElement, duration: number = 400): Promise<v
 };
 
 export const slideToggle = (element: HTMLElement, duration: number): Promise<void> => {
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     if (element.offsetWidth > 0 || element.offsetHeight > 0) {
       slideUp(element, duration).then(() => resolve());
     } else {
@@ -52,7 +52,7 @@ export const slideToggle = (element: HTMLElement, duration: number): Promise<voi
 };
 
 export const slideUp = (element: HTMLElement, duration: number = 400): Promise<void> => {
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     element.style.transitionProperty = "height, margin, padding";
     element.style.transitionDuration = duration + "ms";
     element.style.boxSizing = "border-box";
@@ -73,7 +73,7 @@ export const slideUp = (element: HTMLElement, duration: number = 400): Promise<v
 };
 
 export const slideDown = (element: HTMLElement, duration: number = 400): Promise<void> => {
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     const paddingTop = window.getComputedStyle(element).getPropertyValue("padding-top");
     element.style.display = "block";
     element.style.overflow = "hidden";

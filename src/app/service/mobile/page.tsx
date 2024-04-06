@@ -39,10 +39,9 @@ const MobilePage = () => {
       <DescriptionService image={CDN + "/images/services/app-development.svg"}>
         <h2>Mobile First Concept</h2>
         <p>
-          A mobile app is an online presence strategy that helps you market your business online. A
-          mobile app is important because it helps build credibility as a business, however we
-          recommend this only to medium/large companies. Another important thing is that you have
-          the ability to represent your clients, why should they rely on you.
+          A mobile app is an online presence strategy that helps you market your business online. A mobile app is important because it helps
+          build credibility as a business, however we recommend this only to medium/large companies. Another important thing is that you
+          have the ability to represent your clients, why should they rely on you.
         </p>
       </DescriptionService>
       <ProcessService process={process} />

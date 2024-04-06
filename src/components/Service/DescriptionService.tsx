@@ -17,13 +17,7 @@ const DescriptionService = ({ children, image }: IDescriptionService) => {
         <Row className="align-items-center justify-content-around text-center image-with-description-block">
           <Col lg={6}>{children}</Col>
           <Col lg={6} className="text-lg-right">
-            <Image
-              src={image}
-              alt="description image"
-              className="img-fluid"
-              width={525}
-              height={400}
-            />
+            <Image src={image} alt="description image" className="img-fluid" width={525} height={400} />
           </Col>
         </Row>
       </Container>

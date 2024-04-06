@@ -21,10 +21,7 @@ const Navbar = () => {
       const navMenu = Array.from(navbar.children[0].children).slice(0, -1);
       const dropdownMenu = dropdownMenuRef.current!;
 
-      if (
-        navMenu.includes(e.target as Element) ||
-        navMenu.some(el => el.children[0].contains(e.target as Element))
-      ) {
+      if (navMenu.includes(e.target as Element) || navMenu.some((el) => el.children[0].contains(e.target as Element))) {
         return;
       }
 
@@ -87,7 +84,7 @@ const Navbar = () => {
   const handleDropdown = () => {
     const dropdownMenu = document.querySelector(".custom-dropdown-menu") as HTMLElement;
     window.innerWidth < 991 ? slideToggle(dropdownMenu, 200) : fadeToggle(dropdownMenu, 200);
-    setDropdownOpen(d => !d);
+    setDropdownOpen((d) => !d);
   };
 
   const handleCloseDropdown = () => {
@@ -116,16 +113,10 @@ const Navbar = () => {
 
   return (
     <React.Fragment>
-      <Bar expand="lg" className={`${scrolled ? "scrolled" : ""}`} style={{zIndex:101}}>
+      <Bar expand="lg" className={`${scrolled ? "scrolled" : ""}`} style={{ zIndex: 101 }}>
         <Container>
           <Bar.Brand href="/">
-            <Image
-              src="https://cdn.kesency.com/images/brand-logo.svg"
-              alt="Brand Logo"
-              className="img-fluid"
-              width="207"
-              height="87"
-            />
+            <Image src="https://cdn.kesency.com/images/brand-logo.svg" alt="Brand Logo" className="img-fluid" width="207" height="87" />
           </Bar.Brand>
           <button
             className={`navbar-toggler ${toggleIconChanged ? "change" : ""}`}
@@ -144,39 +135,27 @@ const Navbar = () => {
               {navItems.map((item, index) => {
                 return (
                   <li className="nav-item" key={index}>
-                    <Link className={`nav-link`} href={item.to} onClick={handleCloseNavbar}>
+                    <Link className={"nav-link"} href={item.to} onClick={handleCloseNavbar}>
                       {item.label}
                     </Link>
                   </li>
                 );
               })}
               <li className="nav-item dropdown" key={6}>
-                <a
-                  className="nav-link dropdown-opener"
-                  onClick={handleDropdown}
-                  href="#dropdown?toggle"
-                >
+                <a className="nav-link dropdown-opener" onClick={handleDropdown} href="#dropdown?toggle">
                   Services
                 </a>
                 <div className="custom-dropdown-menu" ref={dropdownMenuRef}>
                   {navDropdown.map((item, index) => {
                     return (
-                      <Link
-                        className="dropdown-item"
-                        key={index}
-                        href={item.to}
-                        onClick={handleCloseDropdown}
-                      >
+                      <Link className="dropdown-item" key={index} href={item.to} onClick={handleCloseDropdown}>
                         {item.label}
                       </Link>
                     );
                   })}
                 </div>
               </li>
-              <GetQuoteButton
-                to={"#quote"}
-                style={isDropdownOpen ? { marginBottom: 20 + "px" } : undefined}
-              />
+              <GetQuoteButton to={"#quote"} style={isDropdownOpen ? { marginBottom: 20 + "px" } : undefined} />
             </ul>
           </Bar.Collapse>
         </Container>

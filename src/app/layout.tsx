@@ -30,7 +30,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  themeColor: "#0066ff",
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
@@ -42,11 +41,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           {children}
         </QuoteProvider>
         <Footer />
-        <script
-          defer
-          src="https://static.cloudflareinsights.com/beacon.min.js"
-          data-cf-beacon={{ token: CLOUDFLARE_BEACON }}
-        />
+        <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={{ token: CLOUDFLARE_BEACON }} />
       </body>
     </html>
   );

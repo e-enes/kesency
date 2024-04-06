@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
 
 import { styles } from "@utils/styles";
@@ -67,11 +66,7 @@ const ServicesSection = () => {
               <Col md={6} lg={4} key={index} className="mb-5" data-aos="fade-up">
                 <Link href={to} className="service-box text-center content-block">
                   <div className={`box-bg ${style.box}`}></div>
-                  <span
-                    className={`icon-container ${style.light}`}
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                  >
+                  <span className={`icon-container ${style.light}`} data-aos="fade-up" data-aos-delay="200">
                     <i className={`${icon} ${style.icon}`}></i>
                   </span>
                   <h5 className="text-center">{title}</h5>

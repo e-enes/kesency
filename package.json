@@ -1,40 +1,27 @@
 {
-  "name": "digital-agency-website",
-  "version": "1.2.0",
+  "name": "kesency",
+  "version": "1.3.0",
   "description": "Official KESENCY Website (front-end part)",
-  "dependencies": {
-    "@fortawesome/free-brands-svg-icons": "^6.4.2",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "bootstrap": "^5.3.1",
-    "next": "^13.4.19",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.8.0",
-    "react-dom": "^18.2.0",
-    "react-google-recaptcha": "^3.1.0",
-    "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1"
-  },
-  "devDependencies": {
-    "@types/node": "^20.5.7",
-    "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7",
-    "@types/react-google-recaptcha": "^2.1.5",
-    "@types/react-slick": "^0.23.10",
-    "@typescript-eslint/eslint-plugin": "^6.5.0",
-    "@typescript-eslint/parser": "^6.5.0",
-    "eslint": "^8.48.0",
-    "eslint-config-next": "^13.4.19",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "prettier": "^3.0.3",
-    "typescript": "^5.2.2"
-  },
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "info": "next info"
+    "format": "prettier . --check",
+    "lint": "eslint .",
+    "lint:staged": "lint-staged",
+    "prepare": "husky"
+  },
+  "author": "Enes Tahiri <125091714+e-enes@users.noreply.github.com>",
+  "license": "MIT",
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
   },
   "browserslist": [
     "> 0.5%",
@@ -42,15 +29,34 @@
     "not ie <= 11",
     "not Safari > 0"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/enes-th/digital-agency-website.git"
-  },
-  "author": "KESENCY",
-  "license": "MIT",
+  "homepage": "https://github.com/e-enes/kesency#readme",
   "bugs": {
-    "url": "https://github.com/enes-th/digital-agency-website/issues"
+    "email": "125091714+e-enes@users.noreply.github.com",
+    "url": "https://github.com/e-enes/kesency/issues"
   },
-  "homepage": "https://github.com/enes-th/digital-agency-website#readme",
-  "private": true
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "bootstrap": "^5.3.3",
+    "next": "^14.1.4",
+    "react-bootstrap": "^2.10.2",
+    "react-google-recaptcha": "^3.1.0",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^14.1.4",
+    "@types/node": "18.19.30",
+    "@types/react-google-recaptcha": "^2.1.9",
+    "@types/react-slick": "^0.23.13",
+    "@typescript-eslint/eslint-plugin": "^7.5.0",
+    "@typescript-eslint/parser": "^7.5.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "typescript": "5.4.4"
+  }
 }

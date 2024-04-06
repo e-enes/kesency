@@ -35,10 +35,10 @@ const HomePage = () => {
         <div className="container">
           <div className="row justify-content-center clients-wrapper">
             <div className="client">
-              <Image src={"/img_1.png"} alt="client1" width="131" height="37" />
+              <Image src={"/clients/client_1.png"} alt="client1" width="131" height="37" />
             </div>
             <div className="client">
-              <Image src={"/img_2.png"} alt="client3" width="131" height="37" />
+              <Image src={"/clients/client_2.png"} alt="client2" width="131" height="37" />
             </div>
           </div>
         </div>

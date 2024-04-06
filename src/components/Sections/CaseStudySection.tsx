@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Slider from "react-slick";
 import Link from "next/link";
 import Image from "next/image";
@@ -33,7 +32,7 @@ const CaseStudySection = () => {
     {
       title: "Empower Your Business Growth",
       description:
-        'Consider this as more than just a slogan; it\'s a dynamic directive for business owners to actively and passionately engage with their ventures. It encourages viewing the enterprise as a living entity, capable of growth and evolution. Embracing new technologies and online platforms, businesses extend their reach to diverse audiences. This enables them to connect with customers in innovative ways, fostering dynamic and meaningful relationships. Ultimately, "Empower Your Business Growth" is a rallying call for entrepreneurs to harness their passion, transforming it into a thriving, dynamic enterprise that enriches lives and contributes to the community.',
+        "Consider this as more than just a slogan; it's a dynamic directive for business owners to actively and passionately engage with their ventures. It encourages viewing the enterprise as a living entity, capable of growth and evolution. Embracing new technologies and online platforms, businesses extend their reach to diverse audiences. This enables them to connect with customers in innovative ways, fostering dynamic and meaningful relationships. Ultimately, 'Empower Your Business Growth' is a rallying call for entrepreneurs to harness their passion, transforming it into a thriving, dynamic enterprise that enriches lives and contributes to the community.",
     },
     {
       title: "Unlock Your Investment's Potential",

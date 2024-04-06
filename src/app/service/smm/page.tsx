@@ -53,11 +53,10 @@ const SMMPage = () => {
       <DescriptionService image={CDN + "/images/services/smm.svg"}>
         <h2>Result Oriented Marketing</h2>
         <p>
-          Result Oriented Marketing is a marketing approach that focuses on achieving specific and
-          measurable outcomes. It involves setting clear goals, developing a targeted strategy, and
-          implementing tactics that are designed to produce measurable results. The primary
-          objective of Result Oriented Marketing is to drive business growth by increasing revenue,
-          generating leads, and building brand awareness.
+          Result Oriented Marketing is a marketing approach that focuses on achieving specific and measurable outcomes. It involves setting
+          clear goals, developing a targeted strategy, and implementing tactics that are designed to produce measurable results. The primary
+          objective of Result Oriented Marketing is to drive business growth by increasing revenue, generating leads, and building brand
+          awareness.
         </p>
       </DescriptionService>
       <ProcessService process={process} />
